@@ -2,11 +2,11 @@
 Curveseries AI Development
 
 graph TD
-    MD[Market Data Agent] --> TA[Technical Analyst]
-    MD --> FA[Fundamentals Analyst]
-    MD --> SA[Sentiment Analyst]
+    Data[Data Agent] -->|JODI/EIA| TA[Technical Agent]
+    Data -->|ICE Futures| FA[Fundamental Agent]
+    Data -->|News/Social| SA[Sentiment Agent]
     TA --> RM[Risk Manager]
     FA --> RM
     SA --> RM
-    RM --> PM[Portfolio Manager]
-    PM --> Decision[Final Decision]
+    RM --> Chatbot[AI Chatbot]
+    Chatbot --> User[Stakeholders]
