@@ -11,8 +11,7 @@ graph TD
     SA --> RM
     RM --> PM[Portfolio Manager]
     PM --> Decision[Final Decision]
-
-
+```
 
 ###Agent Descriptions
 
