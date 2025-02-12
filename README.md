@@ -1,6 +1,7 @@
 # Curveseries-AI-Development
 Curveseries AI Development
 
+```mermaid
 graph TD
     Data[Data Agent] -->|JODI/EIA| TA[Technical Agent]
     Data -->|ICE Futures| FA[Fundamental Agent]
