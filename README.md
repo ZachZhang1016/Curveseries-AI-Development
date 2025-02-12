@@ -12,41 +12,49 @@ graph TD
     RM --> PM[Portfolio Manager]
     PM --> Decision[Final Decision]
 
-Agent Descriptions
-Market Data Agent
 
-Gathers historical price data from yfinance
-Collects financial metrics and statements
-Preprocesses data for other agents
-Technical Analyst
+### Agent Descriptions
 
-Analyzes price trends and patterns
-Calculates technical indicators
-Generates technical trading signals
-Fundamentals Analyst
+1. **Market Data Agent**
 
-Evaluates company financial health
-Analyzes growth metrics
-Provides fundamental analysis signals
-Sentiment Analyst
+   - Gathers historical price data from yfinance
+   - Collects financial metrics and statements
+   - Preprocesses data for other agents
 
-Fetches news from AlphaVantage
-Analyzes news sentiment using Gemini
-Generates sentiment-based signals
-Risk Manager
+2. **Technical Analyst**
 
-Integrates signals from all analysts
-Evaluates potential risks
-Sets position limits
-Provides risk-adjusted recommendations
-Portfolio Manager
+   - Analyzes price trends and patterns
+   - Calculates technical indicators
+   - Generates technical trading signals
 
-Makes final trading decisions
-Manages position sizing
-Balances risk and reward
-Generates executable orders
-Workflow
-Market Data Agent collects all necessary data
-Three analysts (Technical, Fundamental, Sentiment) work in parallel
-Risk Manager combines and evaluates all signals
-Portfolio Manager makes the final decision
+3. **Fundamentals Analyst**
+
+   - Evaluates company financial health
+   - Analyzes growth metrics
+   - Provides fundamental analysis signals
+
+4. **Sentiment Analyst**
+
+   - Fetches news from AlphaVantage
+   - Analyzes news sentiment using Gemini
+   - Generates sentiment-based signals
+
+5. **Risk Manager**
+
+   - Integrates signals from all analysts
+   - Evaluates potential risks
+   - Sets position limits
+   - Provides risk-adjusted recommendations
+
+6. **Portfolio Manager**
+   - Makes final trading decisions
+   - Manages position sizing
+   - Balances risk and reward
+   - Generates executable orders
+
+### Workflow
+
+1. Market Data Agent collects all necessary data
+2. Three analysts (Technical, Fundamental, Sentiment) work in parallel
+3. Risk Manager combines and evaluates all signals
+4. Portfolio Manager makes the final decision
