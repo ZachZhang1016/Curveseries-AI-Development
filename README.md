@@ -3,7 +3,7 @@ Curveseries AI Development
 
 ```mermaid
 graph TD
-    MD[Market Data Analyst] --> TA[Technical Analyst]
+    MD[Market Data Agent] --> TA[Technical Analyst]
     MD --> FA[Fundamentals Analyst]
     MD --> SA[Sentiment Analyst]
     TA --> RM[Risk Manager]
